@@ -1,0 +1,125 @@
+.main {
+  height: 84vh;
+  width: 100%;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+}
+
+.main-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-wrapper-left {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-wrapper-right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-wrapper img {
+  height: 100%;
+}
+
+.main-card {
+  height: 80%;
+  width: 70%;
+  background-color: #272727;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 0 2rem;
+  border-radius: 5px;
+}
+
+.card-header p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #eaeaea;
+}
+
+.card-text p {
+  font-size: 0.8rem;
+  color: #eaeaea;
+}
+
+.card-button button {
+  width: 10rem;
+  height: 3rem;
+  background-color: #eaeaea;
+  border: #eaeaea;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.card-button button:hover {
+  background-color: #b50c0f;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-wrapper {
+    flex-direction: column-reverse;
+  }
+  .main-wrapper-left {
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .main-wrapper-right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-wrapper img {
+    height: 100%;
+  }
+
+  .main-card {
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-header p {
+    font-size: 1.5rem;
+  }
+
+  .card-text p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-wrapper img {
+    height: 100%;
+  }
+  .card-header p {
+    font-size: 1rem;
+  }
+
+  .card-text p {
+    font-size: 0.6rem;
+  }
+}
