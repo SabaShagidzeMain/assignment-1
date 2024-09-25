@@ -1,11 +1,12 @@
 import React from "react";
 import "./Main.css";
+import Products from "../Products/Products";
 
 const Main = () => {
   return (
     <main className="main">
       <div className="main-wrapper">
-        <div className="main-wrapper-left">
+        {/* <div className="main-wrapper-left">
           <img src="../src/assets/geralt.png" alt="" />
         </div>
         <div className="main-wrapper-right">
@@ -27,7 +28,8 @@ const Main = () => {
               <button>Pre-Order Now!</button>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Products />
       </div>
     </main>
   );
