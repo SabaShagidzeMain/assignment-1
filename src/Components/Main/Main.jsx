@@ -3,7 +3,7 @@ import "./Main.css";
 
 const Main = () => {
   return (
-    <div className="main">
+    <main className="main">
       <div className="main-wrapper">
         <div className="main-wrapper-left">
           <img src="../src/assets/geralt.png" alt="" />
@@ -29,7 +29,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

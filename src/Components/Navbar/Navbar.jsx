@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <h3>Logo</h3>
       <nav ref={navRef}>
         <a href="#">Home</a>
@@ -25,7 +25,7 @@ const Navbar = () => {
       <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
       </button>
-    </div>
+    </header>
   );
 };
 

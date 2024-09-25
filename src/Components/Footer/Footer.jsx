@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="footer-wrapper">
         <div className="footer-left">
           <p>I love Videogames</p>
@@ -15,7 +15,7 @@ const Footer = () => {
           <p>Contact: Contact.Sabashagidze@Gmail.com</p>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
