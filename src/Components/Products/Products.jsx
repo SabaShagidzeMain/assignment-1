@@ -1,19 +1,13 @@
 import React from "react";
-import Productcard from "./ProductCard/Productcard";
-import content from "./ProductContent/content";
 import productData from "./ProductContent/content";
-import "./Products.css";
-
+import Productcard from "./ProductCard/Productcard";
+import "./products.css";
 const ProductList = () => {
-  const product = productData[0];
   return (
-    <div className="products-wrapper">
-      <Productcard product={product} />
-      <Productcard product={product} />
-      <Productcard product={product} />
-      <Productcard product={product} />
-      <Productcard product={product} />
-      <Productcard product={product} />
+    <div className="product-list products-wrapper">
+      {productData.map((product) => (
+        <Productcard key={product.id} productData={product} />
+      ))}
     </div>
   );
 };
