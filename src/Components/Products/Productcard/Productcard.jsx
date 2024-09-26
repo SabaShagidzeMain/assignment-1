@@ -14,10 +14,12 @@ const Productcard = ({ productData }) => {
         />
       </div>
       <div className="productcard-wrapper">
-        <h3 className="productcard-name">{name}</h3>
+        <h3 className="productcard-header">{name}</h3>
         <h3 className="productcard-info">{info}</h3>
-        <p className="productcard-price">{price}</p>
-        <button className="productcard-button">Add To Cart</button>
+        <div className="productcard-bot-wrapper">
+          <p className="productcard-price">{price}</p>
+          <button className="productcard-button">Add To Cart</button>
+        </div>
       </div>
     </div>
   );
