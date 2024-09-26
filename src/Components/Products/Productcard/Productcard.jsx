@@ -1,5 +1,6 @@
 import React from "react";
 import "./productcard.css";
+import { FaCartArrowDown } from "react-icons/fa6";
 
 const Productcard = ({ productData }) => {
   const { id, image, name, info, price } = productData;
@@ -18,7 +19,9 @@ const Productcard = ({ productData }) => {
         <h3 className="productcard-info">{info}</h3>
         <div className="productcard-bot-wrapper">
           <p className="productcard-price">{price}</p>
-          <button className="productcard-button">Add To Cart</button>
+          <button className="productcard-button">
+              <FaCartArrowDown />
+          </button>
         </div>
       </div>
     </div>
