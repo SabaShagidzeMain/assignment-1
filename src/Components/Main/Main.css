@@ -112,6 +112,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .main-card {
+    width: 100%;
+  }
   .main-wrapper img {
     height: 100%;
   }

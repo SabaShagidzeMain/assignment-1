@@ -99,7 +99,7 @@
 
 @media only screen and (max-width: 600px) {
   .productcard {
-    width: 8rem;
+    width: 10rem;
     height: 6rem;
     flex-direction: column;
   }
