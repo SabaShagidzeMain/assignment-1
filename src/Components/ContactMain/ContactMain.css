@@ -1,0 +1,9 @@
+.main {
+  height: 84vh;
+  width: 100%;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+}

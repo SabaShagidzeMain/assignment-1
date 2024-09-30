@@ -1,15 +1,18 @@
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar.jsx";
-import Main from "./Components/Main/Main.jsx";
-import Footer from "./Components/Footer/Footer.jsx";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Main />
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
