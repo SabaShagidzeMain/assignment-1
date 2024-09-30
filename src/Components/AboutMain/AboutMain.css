@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.main-left {
+  height: 100%;
+}
+
 .main-left img {
   height: 100%;
 }
