@@ -1,0 +1,17 @@
+.user-wrapper {
+  display: flex;
+}
+
+.user-picture-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user-image {
+  width: 12rem;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
