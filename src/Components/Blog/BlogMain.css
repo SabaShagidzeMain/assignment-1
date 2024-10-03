@@ -1,0 +1,46 @@
+.main {
+  height: 84vh;
+  width: 100%;
+  background-image: url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  height: 9rem;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.blog-card-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 3px solid blue;
+}
+
+.username {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
