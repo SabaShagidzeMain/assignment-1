@@ -2,6 +2,11 @@ import React from "react";
 import "./ProfileMain.css";
 
 const ProfileMain = () => {
+  function onChange(e) {
+    const inputValue = e.target.value;
+    console.log(inputValue);
+  }
+
   return (
     <main className="main">
       <div className="user-wrapper">
@@ -14,7 +19,9 @@ const ProfileMain = () => {
             className="user-image"
           />
           <button className="user-button">Upload A New Picture</button>
-          <p className="user-text">Member Since 29 September 2019</p>
+          <p className="user-text">
+            Member Since <span>29 September 2019</span>
+          </p>
         </div>
         <div className="user-info-wrapper">
           <p className="user-header">Edit Profile</p>
@@ -22,7 +29,13 @@ const ProfileMain = () => {
             <div className="user-info-col">
               <div className="user-info-block">
                 <label htmlFor="fname">First Name:</label>
-                <input type="text" id="fname" name="fname" value="John" />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  value="John"
+                  onChange={onChange}
+                />
               </div>
               <div className="user-info-block">
                 <label htmlFor="pass">Password:</label>
@@ -31,6 +44,7 @@ const ProfileMain = () => {
                   id="pass"
                   name="pass"
                   value="verysecret"
+                  onChange={onChange}
                 />
               </div>
               <div className="user-info-block">
@@ -40,13 +54,20 @@ const ProfileMain = () => {
                   id="email"
                   name="email"
                   value="JamesAllan@Mail.Com"
+                  onChange={onChange}
                 />
               </div>
             </div>
             <div className="user-info-col">
               <div className="user-info-block">
                 <label htmlFor="lname">First Name:</label>
-                <input type="text" id="lname" name="lname" value="Allan" />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  value="Allan"
+                  onChange={onChange}
+                />
               </div>
               <div className="user-info-block">
                 <label htmlFor="repeat-pass">Password:</label>
@@ -55,6 +76,7 @@ const ProfileMain = () => {
                   id="repeat-pass"
                   name="prepeat-pass"
                   value="verysecret"
+                  onChange={onChange}
                 />
               </div>
               <div className="user-info-block">
@@ -64,6 +86,7 @@ const ProfileMain = () => {
                   id="confirm-email"
                   name="confirm-email"
                   value="JamesAllan@Mail.Com"
+                  onChange={onChange}
                 />
               </div>
             </div>
