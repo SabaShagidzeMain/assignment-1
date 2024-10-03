@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link to="/Assignment3" className="nav-link">
             Assignment 3
           </Link>
-          <Link to="">
+          <Link to="/Profile">
             <img
               src="src/assets/user-images/serious-man-thinking_1149-1328.avif"
               alt=""
