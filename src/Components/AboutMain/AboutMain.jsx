@@ -11,7 +11,7 @@ const AboutMain = () => {
         <div className="main-right-wrapper">
           <h3>The Witcher 3</h3>
           <p>
-             The Witcher 3: Wild Hunt is a 2015 action role-playing game
+            The Witcher 3: Wild Hunt is a 2015 action role-playing game
             developed and published by the Polish studio CD Projekt. It is the
             sequel to the 2011 game The Witcher 2: Assassins of Kings and the
             third game in The Witcher video game series, played in an open world
